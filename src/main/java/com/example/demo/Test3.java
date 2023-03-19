@@ -15,5 +15,6 @@ public class Test3 {
         person.callYourPet();
 
         context.close();
+        // aboba
     }
 }
