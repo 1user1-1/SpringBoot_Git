@@ -13,11 +13,10 @@
 
     </bean>
 
-    <bean id = "myCat"
-          class = "com.example.demo.Cat">
-
+    <bean id = "myPerson"
+          class = "com.example.demo.Person">
+        <constructor-arg ref = "myPet"/>
     </bean>
-
 
 </beans>
 
