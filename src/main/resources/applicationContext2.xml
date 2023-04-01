@@ -10,7 +10,9 @@
 
     <bean id = "myPet"
           class = "com.example.demo.Dog"
-            scope="singleton">
+          init-method="init"
+          destroy-method="destroy"
+    scope="prototype">
     </bean>
 
 
