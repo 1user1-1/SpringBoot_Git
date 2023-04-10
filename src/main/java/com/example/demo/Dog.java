@@ -1,5 +1,8 @@
 package com.example.demo;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -14,10 +17,12 @@ public class Dog implements Pet{
         System.out.println("dog bean is created");
     }
 
+    @PostConstruct
     protected void init(){
         System.out.println("Class Dog: init method");
     }
 
+    @PreDestroy
     private void destroy(){
         System.out.println("Class Dog: destroy method");
     }
